@@ -1,11 +1,10 @@
-package com.example.demo;
+package com.pc.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages= {"com.pc.springboot"})
 public class HelloWorldApplication {
 
 	public static void main(String[] args) {
