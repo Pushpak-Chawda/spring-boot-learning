@@ -8,8 +8,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.pc.springboot.entity.Order;
 import com.pc.springboot.entity.User;
 import com.pc.springboot.exception.UserExistException;
+import com.pc.springboot.exception.UserNameNotFoundException;
 import com.pc.springboot.exception.UserNotFound;
 import com.pc.springboot.repository.UserRepository;
 
@@ -80,4 +82,8 @@ public class UserService {
 		
 		return	userRepository.findByUsername(username); 
 	}
+	
+	
+	
+	
 }
